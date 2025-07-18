@@ -22,7 +22,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding-top: 120px;
+        padding-top: 160px;
     }
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 .logo img {
-    height: 70px; 
+    height: 70px;
     width: max-content;
     transition: transform 0.3s ease;
     padding: 5px;
@@ -317,7 +317,6 @@ footer {
     color: #ddd;
 }
 
-
 .formulario-contacto {
     display: flex;
     flex-direction: column;
@@ -424,9 +423,12 @@ footer {
     color: black;
 }
 
-
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    body {
+        padding-top: 160px;
+    }
+
     header {
         flex-direction: column;
         padding: 1rem 5%;
@@ -466,7 +468,14 @@ footer {
 
     .formulario-contacto {
         width: 100%;
-        padding: 0 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+        font-size: 0.95rem;
+        max-width: 100%;
     }
 
     .contacto-pagina h1 {
@@ -503,11 +512,12 @@ footer {
     }
 
     .formulario-contacto {
-        padding: 0 15px;
+        padding: 15px;
     }
 
     .formulario-contacto input,
     .formulario-contacto textarea {
         font-size: 0.95rem;
+        max-width: 100%;
     }
 }
